@@ -14,6 +14,11 @@
 		B1177B032915A9520025A055 /* AnimalQuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1177B022915A9520025A055 /* AnimalQuizTests.swift */; };
 		B1177B0D2915A9520025A055 /* AnimalQuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1177B0C2915A9520025A055 /* AnimalQuizUITests.swift */; };
 		B1177B0F2915A9520025A055 /* AnimalQuizUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1177B0E2915A9520025A055 /* AnimalQuizUITestsLaunchTests.swift */; };
+		B1177B1D2915A9B80025A055 /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1177B1C2915A9B80025A055 /* QuizModel.swift */; };
+		B1177B222915BAB20025A055 /* ReusableText.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1177B212915BAB20025A055 /* ReusableText.swift */; };
+		B1177B242915BBA50025A055 /* GameManagerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1177B232915BBA50025A055 /* GameManagerVM.swift */; };
+		B1177B262915C2C60025A055 /* OptionsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1177B252915C2C60025A055 /* OptionsGridView.swift */; };
+		B13FF4C52919C91200137900 /* QuizCompeletedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13FF4C42919C91200137900 /* QuizCompeletedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		B1177B082915A9520025A055 /* AnimalQuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimalQuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1177B0C2915A9520025A055 /* AnimalQuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalQuizUITests.swift; sourceTree = "<group>"; };
 		B1177B0E2915A9520025A055 /* AnimalQuizUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalQuizUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B1177B1C2915A9B80025A055 /* QuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
+		B1177B212915BAB20025A055 /* ReusableText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableText.swift; sourceTree = "<group>"; };
+		B1177B232915BBA50025A055 /* GameManagerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManagerVM.swift; sourceTree = "<group>"; };
+		B1177B252915C2C60025A055 /* OptionsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsGridView.swift; sourceTree = "<group>"; };
+		B13FF4C42919C91200137900 /* QuizCompeletedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCompeletedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +104,11 @@
 		B1177AF02915A9510025A055 /* AnimalQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				B1177AF12915A9510025A055 /* AnimalQuizApp.swift */,
+				B1177B202915AD2B0025A055 /* ViewModels */,
+				B1177B1F2915AD1D0025A055 /* UIComponents */,
 				B1177AF32915A9510025A055 /* ContentView.swift */,
+				B1177AF12915A9510025A055 /* AnimalQuizApp.swift */,
+				B1177B1B2915A9820025A055 /* Models */,
 				B1177AF52915A9520025A055 /* Assets.xcassets */,
 				B1177AF72915A9520025A055 /* Preview Content */,
 			);
@@ -125,6 +138,32 @@
 				B1177B0E2915A9520025A055 /* AnimalQuizUITestsLaunchTests.swift */,
 			);
 			path = AnimalQuizUITests;
+			sourceTree = "<group>";
+		};
+		B1177B1B2915A9820025A055 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B1177B1C2915A9B80025A055 /* QuizModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B1177B1F2915AD1D0025A055 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				B1177B252915C2C60025A055 /* OptionsGridView.swift */,
+				B1177B212915BAB20025A055 /* ReusableText.swift */,
+				B13FF4C42919C91200137900 /* QuizCompeletedView.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		B1177B202915AD2B0025A055 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B1177B232915BBA50025A055 /* GameManagerVM.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +297,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1177AF42915A9510025A055 /* ContentView.swift in Sources */,
+				B1177B222915BAB20025A055 /* ReusableText.swift in Sources */,
+				B1177B242915BBA50025A055 /* GameManagerVM.swift in Sources */,
+				B13FF4C52919C91200137900 /* QuizCompeletedView.swift in Sources */,
+				B1177B262915C2C60025A055 /* OptionsGridView.swift in Sources */,
+				B1177B1D2915A9B80025A055 /* QuizModel.swift in Sources */,
 				B1177AF22915A9510025A055 /* AnimalQuizApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
